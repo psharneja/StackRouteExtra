@@ -1,0 +1,54 @@
+{
+  "Question":[
+    {
+    "id":0,
+    "Question":"what is capital of India",
+    "Option1":"Kolkata",
+    "Option2":"Lucknow",
+    "Option3":"Chandigarh",
+    "Option4":"Delhi",  
+    "CorectAnswer":"Delhi",
+    "YourAnswer":""
+  },
+  {
+    "id":1,
+    "Question":"what is capital of Punjab",
+    "Option1":"Kolkata",
+    "Option2":"Lucknow",
+    "Option3":"Chandigarh",
+    "Option4":"Delhi",
+    "CorectAnswer":"Chandigarh",
+    "YourAnswer":""
+  },
+  {
+    "id":2,
+    "Question":"what is capital of UP",
+    "Option1":"Kolkata",
+    "Option2":"Lucknow",
+    "Option3":"Chandigarh",
+    "Option4":"Delhi",
+    "CorectAnswer":"Lucknow",
+    "YourAnswer":""
+  },
+  {
+    "id":3,
+    "Question":"what is capital of WestBengal",
+    "Option1":"Kolkata",
+    "Option2":"Lucknow",
+    "Option3":"Chandigarh",
+    "Option4":"Delhi",
+    "CorectAnswer":"Kolkata",
+    "YourAnswer":""
+  },
+  {
+    "id":4,
+    "Question":"what is capital of Karnatka",
+    "Option1":"Kolkata",
+    "Option2":"Lucknow",
+    "Option3":"Bangalore",
+    "Option4":"Delhi",
+    "CorectAnswer":"Bangalore",
+    "YourAnswer":""
+  }
+  ]
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "continents": "Europe",
+    "aggregatePopulationof2013": 268.2
+  },
+  {
+    "continents": "Asia",
+    "aggregatePopulationof2013": 3296.1999999999994
+  },
+  {
+    "continents": "NorthAmerica",
+    "aggregatePopulationof2013": 470.25
+  },
+  {
+    "continents": "SouthAmerica",
+    "aggregatePopulationof2013": 243.23000000000002
+  },
+  {
+    "continents": "Australia",
+    "aggregatePopulationof2013": 23.3
+  },
+  {
+    "continents": "Africa",
+    "aggregatePopulationof2013": 53.16
+  }
+]

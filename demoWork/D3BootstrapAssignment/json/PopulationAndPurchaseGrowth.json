@@ -1,0 +1,107 @@
+[
+  {
+    "country": "Argentina",
+    "GrowthFrom2010to2013": 147.01999999999998,
+    "PopulationFrom2010to2013": 1.4100000000000037
+  },
+  {
+    "country": "Australia",
+    "GrowthFrom2010to2013": 135.34000000000003,
+    "PopulationFrom2010to2013": 1.129999999999999
+  },
+  {
+    "country": "Brazil",
+    "GrowthFrom2010to2013": 414.2999999999997,
+    "PopulationFrom2010to2013": 5.530000000000001
+  },
+  {
+    "country": "Canada",
+    "GrowthFrom2010to2013": 177.27999999999997,
+    "PopulationFrom2010to2013": 1.1499999999999986
+  },
+  {
+    "country": "China",
+    "GrowthFrom2010to2013": 4227.98,
+    "PopulationFrom2010to2013": 19.809999999999945
+  },
+  {
+    "country": "France",
+    "GrowthFrom2010to2013": 23204.56,
+    "PopulationFrom2010to2013": 0.8799999999999955
+  },
+  {
+    "country": "Germany",
+    "GrowthFrom2010to2013": 350.47000000000025,
+    "PopulationFrom2010to2013": -0.980000000000004
+  },
+  {
+    "country": "India",
+    "GrowthFrom2010to2013": 1425.5100000000002,
+    "PopulationFrom2010to2013": 64.28999999999996
+  },
+  {
+    "country": "Indonesia",
+    "GrowthFrom2010to2013": 512.0999999999999,
+    "PopulationFrom2010to2013": 11.180000000000007
+  },
+  {
+    "country": "Italy",
+    "GrowthFrom2010to2013": 32.42000000000007,
+    "PopulationFrom2010to2013": 0.5
+  },
+  {
+    "country": "Japan",
+    "GrowthFrom2010to2013": 375.35000000000036,
+    "PopulationFrom2010to2013": -0.710000000000008
+  },
+  {
+    "country": "Mexico",
+    "GrowthFrom2010to2013": 284.1600000000001,
+    "PopulationFrom2010to2013": 4.109999999999999
+  },
+  {
+    "country": "Russia",
+    "GrowthFrom2010to2013": 467.02999999999975,
+    "PopulationFrom2010to2013": 0.799999999999983
+  },
+  {
+    "country": "Saudi Arabia",
+    "GrowthFrom2010to2013": 312.76,
+    "PopulationFrom2010to2013": 2.4299999999999997
+  },
+  {
+    "country": "South Africa",
+    "GrowthFrom2010to2013": 83.72000000000003,
+    "PopulationFrom2010to2013": 2.3699999999999974
+  },
+  {
+    "country": "Republic of Korea",
+    "GrowthFrom2010to2013": 225.23000000000002,
+    "PopulationFrom2010to2013": 0.8100000000000023
+  },
+  {
+    "country": "Turkey",
+    "GrowthFrom2010to2013": 263.77,
+    "PopulationFrom2010to2013": 2.9200000000000017
+  },
+  {
+    "country": "United Kingdom",
+    "GrowthFrom2010to2013": 220.75,
+    "PopulationFrom2010to2013": 1.8300000000000054
+  },
+  {
+    "country": "USA",
+    "GrowthFrom2010to2013": 1698.7500000000018,
+    "PopulationFrom2010to2013": 6.980000000000018
+  },
+  {
+    "country": "European Union",
+    "GrowthFrom2010to2013": 1226.449999999997,
+    "PopulationFrom2010to2013": 3.240000000000009
+  },
+  {
+    "country": "World",
+    "GrowthFrom2010to2013": 15031.350000000006,
+    "PopulationFrom2010to2013": 234.69999999999982
+  }
+]

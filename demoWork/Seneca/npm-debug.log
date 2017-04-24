@@ -1,0 +1,148 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Users\\Admin\\AppData\\Roaming\\npm\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'seneca',
+1 verbose cli   'balance-client',
+1 verbose cli   '--save' ]
+2 info using npm@3.10.5
+3 info using node@v4.4.7
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData seneca@^3.2.1
+8 silly fetchPackageMetaData balance-client
+9 silly fetchNamedPackageData seneca
+10 silly mapToRegistry name seneca
+11 silly mapToRegistry using default registry
+12 silly mapToRegistry registry https://registry.npmjs.org/
+13 silly mapToRegistry data Result {
+13 silly mapToRegistry   raw: 'seneca',
+13 silly mapToRegistry   scope: null,
+13 silly mapToRegistry   escapedName: 'seneca',
+13 silly mapToRegistry   name: 'seneca',
+13 silly mapToRegistry   rawSpec: '',
+13 silly mapToRegistry   spec: 'latest',
+13 silly mapToRegistry   type: 'tag' }
+14 silly mapToRegistry uri https://registry.npmjs.org/seneca
+15 silly fetchNamedPackageData balance-client
+16 silly mapToRegistry name balance-client
+17 silly mapToRegistry using default registry
+18 silly mapToRegistry registry https://registry.npmjs.org/
+19 silly mapToRegistry data Result {
+19 silly mapToRegistry   raw: 'balance-client',
+19 silly mapToRegistry   scope: null,
+19 silly mapToRegistry   escapedName: 'balance-client',
+19 silly mapToRegistry   name: 'balance-client',
+19 silly mapToRegistry   rawSpec: '',
+19 silly mapToRegistry   spec: 'latest',
+19 silly mapToRegistry   type: 'tag' }
+20 silly mapToRegistry uri https://registry.npmjs.org/balance-client
+21 verbose request uri https://registry.npmjs.org/balance-client
+22 verbose request no auth needed
+23 info attempt registry request try #1 at 4:01:16 PM
+24 verbose request id cd71bbb5ab70d901
+25 http request GET https://registry.npmjs.org/balance-client
+26 verbose request uri https://registry.npmjs.org/seneca
+27 verbose request no auth needed
+28 info attempt registry request try #1 at 4:01:16 PM
+29 verbose etag "BWDTLI7XF0SPKLWSEZX0XR1SG"
+30 http request GET https://registry.npmjs.org/seneca
+31 http 404 https://registry.npmjs.org/balance-client
+32 verbose headers { 'content-type': 'application/json',
+32 verbose headers   'cache-control': 'max-age=0',
+32 verbose headers   'content-length': '2',
+32 verbose headers   'accept-ranges': 'bytes',
+32 verbose headers   date: 'Tue, 04 Oct 2016 10:31:15 GMT',
+32 verbose headers   via: '1.1 varnish',
+32 verbose headers   age: '0',
+32 verbose headers   connection: 'keep-alive',
+32 verbose headers   'x-served-by': 'cache-sin6921-SIN',
+32 verbose headers   'x-cache': 'MISS',
+32 verbose headers   'x-cache-hits': '0',
+32 verbose headers   'x-timer': 'S1475577075.725162,VS0,VE237',
+32 verbose headers   vary: 'Accept-Encoding' }
+33 silly get cb [ 404,
+33 silly get   { 'content-type': 'application/json',
+33 silly get     'cache-control': 'max-age=0',
+33 silly get     'content-length': '2',
+33 silly get     'accept-ranges': 'bytes',
+33 silly get     date: 'Tue, 04 Oct 2016 10:31:15 GMT',
+33 silly get     via: '1.1 varnish',
+33 silly get     age: '0',
+33 silly get     connection: 'keep-alive',
+33 silly get     'x-served-by': 'cache-sin6921-SIN',
+33 silly get     'x-cache': 'MISS',
+33 silly get     'x-cache-hits': '0',
+33 silly get     'x-timer': 'S1475577075.725162,VS0,VE237',
+33 silly get     vary: 'Accept-Encoding' } ]
+34 silly fetchPackageMetaData Error: Registry returned 404 for GET on https://registry.npmjs.org/balance-client
+34 silly fetchPackageMetaData     at makeError (C:\Users\Admin\AppData\Roaming\npm\node_modules\npm\node_modules\npm-registry-client\lib\request.js:264:12)
+34 silly fetchPackageMetaData     at CachingRegistryClient.<anonymous> (C:\Users\Admin\AppData\Roaming\npm\node_modules\npm\node_modules\npm-registry-client\lib\request.js:242:14)
+34 silly fetchPackageMetaData     at Request._callback (C:\Users\Admin\AppData\Roaming\npm\node_modules\npm\node_modules\npm-registry-client\lib\request.js:172:14)
+34 silly fetchPackageMetaData     at Request.self.callback (C:\Users\Admin\AppData\Roaming\npm\node_modules\npm\node_modules\request\request.js:200:22)
+34 silly fetchPackageMetaData     at emitTwo (events.js:87:13)
+34 silly fetchPackageMetaData     at Request.emit (events.js:172:7)
+34 silly fetchPackageMetaData     at Request.<anonymous> (C:\Users\Admin\AppData\Roaming\npm\node_modules\npm\node_modules\request\request.js:1067:10)
+34 silly fetchPackageMetaData     at emitOne (events.js:82:20)
+34 silly fetchPackageMetaData     at Request.emit (events.js:169:7)
+34 silly fetchPackageMetaData     at IncomingMessage.<anonymous> (C:\Users\Admin\AppData\Roaming\npm\node_modules\npm\node_modules\request\request.js:988:12)
+34 silly fetchPackageMetaData  error for balance-client { [Error: Registry returned 404 for GET on https://registry.npmjs.org/balance-client] pkgid: 'balance-client', statusCode: 404, code: 'E404' }
+35 http 304 https://registry.npmjs.org/seneca
+36 verbose headers { date: 'Tue, 04 Oct 2016 10:31:15 GMT',
+36 verbose headers   via: '1.1 varnish',
+36 verbose headers   'cache-control': 'max-age=300',
+36 verbose headers   etag: '"BWDTLI7XF0SPKLWSEZX0XR1SG"',
+36 verbose headers   age: '0',
+36 verbose headers   connection: 'keep-alive',
+36 verbose headers   'x-served-by': 'cache-sin6921-SIN',
+36 verbose headers   'x-cache': 'HIT',
+36 verbose headers   'x-cache-hits': '1',
+36 verbose headers   'x-timer': 'S1475577075.738217,VS0,VE1038',
+36 verbose headers   vary: 'Accept-Encoding' }
+37 silly get cb [ 304,
+37 silly get   { date: 'Tue, 04 Oct 2016 10:31:15 GMT',
+37 silly get     via: '1.1 varnish',
+37 silly get     'cache-control': 'max-age=300',
+37 silly get     etag: '"BWDTLI7XF0SPKLWSEZX0XR1SG"',
+37 silly get     age: '0',
+37 silly get     connection: 'keep-alive',
+37 silly get     'x-served-by': 'cache-sin6921-SIN',
+37 silly get     'x-cache': 'HIT',
+37 silly get     'x-cache-hits': '1',
+37 silly get     'x-timer': 'S1475577075.738217,VS0,VE1038',
+37 silly get     vary: 'Accept-Encoding' } ]
+38 verbose etag https://registry.npmjs.org/seneca from cache
+39 verbose get saving seneca to C:\Users\Admin\AppData\Roaming\npm-cache\registry.npmjs.org\seneca\.cache.json
+40 verbose correctMkdir C:\Users\Admin\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+41 silly rollbackFailedOptional Starting
+42 silly rollbackFailedOptional Finishing
+43 silly runTopLevelLifecycles Starting
+44 silly runTopLevelLifecycles Finishing
+45 silly install printInstalled
+46 verbose stack Error: Registry returned 404 for GET on https://registry.npmjs.org/balance-client
+46 verbose stack     at makeError (C:\Users\Admin\AppData\Roaming\npm\node_modules\npm\node_modules\npm-registry-client\lib\request.js:264:12)
+46 verbose stack     at CachingRegistryClient.<anonymous> (C:\Users\Admin\AppData\Roaming\npm\node_modules\npm\node_modules\npm-registry-client\lib\request.js:242:14)
+46 verbose stack     at Request._callback (C:\Users\Admin\AppData\Roaming\npm\node_modules\npm\node_modules\npm-registry-client\lib\request.js:172:14)
+46 verbose stack     at Request.self.callback (C:\Users\Admin\AppData\Roaming\npm\node_modules\npm\node_modules\request\request.js:200:22)
+46 verbose stack     at emitTwo (events.js:87:13)
+46 verbose stack     at Request.emit (events.js:172:7)
+46 verbose stack     at Request.<anonymous> (C:\Users\Admin\AppData\Roaming\npm\node_modules\npm\node_modules\request\request.js:1067:10)
+46 verbose stack     at emitOne (events.js:82:20)
+46 verbose stack     at Request.emit (events.js:169:7)
+46 verbose stack     at IncomingMessage.<anonymous> (C:\Users\Admin\AppData\Roaming\npm\node_modules\npm\node_modules\request\request.js:988:12)
+47 verbose statusCode 404
+48 verbose pkgid balance-client
+49 verbose cwd D:\DemoWorkSpace\stackroute-html-vagrant-master\demoWork\Seneca
+50 error Windows_NT 6.3.9600
+51 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Users\\Admin\\AppData\\Roaming\\npm\\node_modules\\npm\\bin\\npm-cli.js" "install" "seneca" "balance-client" "--save"
+52 error node v4.4.7
+53 error npm  v3.10.5
+54 error code E404
+55 error 404 Registry returned 404 for GET on https://registry.npmjs.org/balance-client
+56 error 404
+57 error 404 'balance-client' is not in the npm registry.
+58 error 404 You should bug the author to publish it (or use the name yourself!)
+59 error 404 Note that you can also install from a
+60 error 404 tarball, folder, http url, or git url.
+61 verbose exit [ 1, true ]

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Chart Representaion</title>
+  <meta name="viewport" content=" width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <!-- Bootstrap Css -->
+  <!-- <link rel="stylesheet" type="text/css" href="css/bootstrap.css"> -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap-glyphicons.css">
+  <!-- Custom css -->
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link rel="stylesheet" type="text/css" href="css/BarChartStyleSheet.css">
+</head>
+<body>
+  <script type="text/javascript" src="js/d3.min.js"></script>
+  <!-- header start -->
+  <div class="container" >
+    <!-- header start -->
+    <div class="container-fluid">
+      <div class="navbar navbar-default navbar-fixed-top" id="mainContainer">
+        <div class="navbar-header" id="navHeader">
+          <h1> GDP and population data for G20 countries </h1>
+        </div> <!--navbar-header end tag -->         
+      </div><!--navbat end tag-->
+    </div><!-- container-fluid end -->
+    <!-- header end -->
+
+    <!--content start -->
+    <div class="row" id="chartRow">
+      <div class="col-sm-12">
+      <div id="messagePopulation">
+        <h2>Population of G20 countries for the year 2013</h2>
+        </div>
+        <div id="messageGDP">
+        <h2>GDP of G20 countries for the year 2013</h2>
+        </div>
+        <div id="messagePPP">
+        <h2>Purchasing Power of G20 countries for the year 2013</h2>
+        </div>
+        <!-- Success Message area for query -->
+        <div class="alert alert-success alert-block fade in" id="successMailAlert">
+          <button type="button" class="close" data-dismiss="alert">&times;</button>       
+          <h4>Success!</h4>
+          <p>Thanks for your valuable Feedback!!</p>
+        </div><!-- end alert -->
+        <div class="button">
+          <button class="btn btn-primary" type="button" id="populationbtn">Population</button>
+           <button class="btn btn-primary" type="button" id="gdobtn">GDP</button>
+            <button class="btn btn-primary" type="button" id="pppbtn">PPP</button>
+        </div>
+        <div id="population2013"></div>
+<div class="message-wrapper" >
+          <button type="button" class="close" data-dismiss="alert">&times;</button> 
+          <form role="form">
+            <div class="form-group">
+              <label for="comment">Feedback:</label>
+              <textarea class="form-control" rows="5" id="comment"></textarea>
+            </div>
+          </form> 
+          <a href="" class="btn btn-large btn-primary" id="btnAlertTextArea">Feedback</a>
+        </div>  
+
+        
+
+      </div> <!--col-sm-12 end -->
+    </div> <!-- row tag end -->
+  </div><!-- container end -->
+
+
+  
+  <script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+  <script type="text/javascript" src="js/modernizr-2.6.2.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- custom js -->
+  <script type="text/javascript" src="js/script.js"></script>
+  <script type="text/javascript" src="js/barChart.js"></script>
+</body>
+</html>

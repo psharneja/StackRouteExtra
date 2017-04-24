@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>D3 Practise</title>
+	<!-- <link href='https://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'> -->
+	  <!-- <script type="text/javascript" src="js/d3.min.js"></script> -->
+	  <!--  <script type="text/javascript" src="js/d3.js"></script> -->
+	   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+
+
+	<style >
+		text{
+			font-family: 'Slabo 27px', serif;
+			font-size:50px;
+			fill:orange;
+		}
+	</style>
+	
+</head>
+<body>
+		<!-- Olympic circle
+		<svg height="1200" width="1200">
+		<circle cx="100" cy="100" r="50" fill="none"  stroke="blue" stroke-width="10">
+		</circle>
+		<circle cx="225" cy="100" r="50" fill="none"  stroke="black" stroke-width="10">
+		</circle>
+		<circle cx="355" cy="100" r="50" fill="none"  stroke="red" stroke-width="10">
+		</circle>
+		<circle cx="160" cy="150" r="50" fill="none"  stroke="yellow" stroke-width="10">
+		</circle>
+		<circle cx="290" cy="150" r="50" fill="none"  stroke="green" stroke-width="10">
+		</circle>
+		</svg>
+		-->
+
+		<!-- line -->
+		
+		<!-- Converting through path -->
+		<!-- Closing Full Line  -->
+		<!--
+		<svg height="1200" width="1200">
+		<path d="M100 200 L120 100 L180 140 L240 100 L260 200Z" stroke="green" stroke-width="20" fill ="none"></path> 
+		
+			<line x1="100" y1="200" x2="120" y2="100" stroke="green" stroke-width="20">
+			</line>
+			<line x1="120" y1="100" x2="180" y2="140" stroke="green" stroke-width="20">
+			</line>
+			<line x1="180" y1="140" x2="240" y2="100" stroke="green" stroke-width="20">
+			</line>
+			<line x1="240" y1="100" x2="260" y2="200" stroke="green" stroke-width="20">
+			</line> -->
+			<!-- A -->
+			<!--
+			<line x1="280" y1="200" x2="310" y2="100" stroke="green" stroke-width="20">
+			</line>
+			<line x1="310" y1="100" x2="340" y2="200" stroke="green" stroke-width="20">
+			</line>
+			<line x1="290" y1="140" x2="330" y2="140" stroke="green" stroke-width="20">
+			</line> -->
+			<!-- N -->
+
+			<!-- <line x1="360" y1="200" x2="380" y2="100" stroke="green" stroke-width="20">
+			</line>
+			<line x1="380" y1="100" x2="410" y2="200" stroke="green" stroke-width="20">
+			</line>
+			<line x1="410" y1="200" x2="460" y2="100" stroke="green" stroke-width="20">
+			</line> -->
+
+			<!-- I -->
+			<!-- <line x1="480" y1="200" x2="480" y2="100" stroke="green" stroke-width="20">
+			</line>
+			<line x1="480" y1="95" x2="480" y2="85" stroke="green" stroke-width="20">
+			</line> -->
+
+			<!-- S -->
+			<!-- line x1="520" y1="200" x2="600" y2="200" stroke="green" stroke-width="20">
+			</line>
+			<line x1="600" y1="200" x2="600" y2="150" stroke="green" stroke-width="20">
+			</line>
+			<line x1="600" y1="150" x2="520" y2="150" stroke="green" stroke-width="20">
+			</line>
+			<line x1="520" y1="150" x2="520" y2="100" stroke="green" stroke-width="20">
+			</line>
+			<line x1="520" y1="100" x2="600" y2="100" stroke="green" stroke-width="20">
+			</line>
+ -->
+			<!-- H -->
+			<!-- <line x1="640" y1="200" x2="640" y2="100" stroke="green" stroke-width="20">
+			</line>
+			<line x1="740" y1="200" x2="740" y2="100" stroke="green" stroke-width="20">
+			</line>
+			<line x1="640" y1="150" x2="740" y2="150" stroke="green" stroke-width="20">
+			</line>
+		</svg> -->
+<!-- <marquee>
+		<svg height ="1000" width="1000">
+		<text x=0 y=650> Bachna a Hasino lo mai aa gaya Rajat Bhai </text>
+		<circle cx="500" cy="300" r="100" stroke="orange" stroke-width="10" fill="pink"/>
+			<rect x=430 y=270 height=20 width=20 fill=red />
+				<rect x=520 y=270 height=20 width=20 fill=red />
+			<path d="M475 330 q20 20 40 0" fill ="orange" stroke="red" stroke-width="2" />
+			<path d="M530 400 q100 100 0 300" fill ="none" stroke="pink" stroke-width="10" />
+			<path d="M480 400 q-100 100 0 300" fill ="none" stroke="pink" stroke-width="10" />
+
+			<circle cx="800" cy="300" r="100" stroke="orange" stroke-width="10" fill="green"/>
+
+				<rect x=750 y=270 height=20 width=20 fill=black />
+				<rect x=830 y=270 height=20 width=20 fill=black />
+
+            <path d="M790 330 q20 20 40 0" fill ="orange"  stroke-width="2" />
+
+            <path d="M830 400 q100 100 0 300" fill ="none" stroke="brown" stroke-width="10" />
+			<path d="M780 400 q-100 100 0 300" fill ="none" stroke="brown" stroke-width="10" />
+		</svg>
+		</marquee> -->
+		<script>
+		// var scale =d3.scaleLinear();
+		// scale.domain([0, 20]);
+		// scale.range([0, 1000])
+		// console.log(scale(2));
+		// // call the function to see domain and range content
+		// console.log(scale.domain());
+		// console.log(scale.range ());	
+
+		// var scale=d3.scalePoint()
+		// 	.domain(["S","M","P"])
+		// 	.rangeRound([0,100]);
+		// 	console.log(scale("S"));
+		// 	console.log(scale("M"));
+		// 	console.log(scale("P"));
+
+		var svg =d3.select("body").append("svg")
+			.attr("width",250)
+			.attr("height",250);
+		// var react=svg.append("rect")
+		// .attr("x",120)
+		// .attr("y",150)
+		// .attr("width", 50)
+		// .attr("height",50)
+		// .attr("fill", "red")
+		// .attr("stroke","green")
+		// .attr("stroke-width",10);	
+
+		//var m=[1, 2 , 3, 4, 5];
+		var scale =d3.scale.linear()
+		.domain([1, 5])
+		.rangeRound([0, 200]);
+			console.log(scale(3));
+		// svg.selectAll("circle")
+		// 	.data(m)
+		// 	.enter().append("circle")
+		// 	.attr("cx",function (d){ return scale(d);})
+		// 	.attr("cy", 100)
+		// 	.attr("r", 20)
+		// 	.attr("fill","red");
+
+		function display(data, color)
+		{
+			var rects= svg.selectAll("rect").data(data); //Binding data
+			rects.enter().append("rect");
+
+			rects
+			.attr("x",scale)
+						.attr("y", 100)
+			.attr("width", 20)
+		    .attr("height",20)
+		    .attr("fill", color);
+		
+		}
+		display([1, 2, 3], "red");
+		// display([1, 2, 3], "blue");
+
+
+		
+
+	</script>
+
+</body>
+</html>

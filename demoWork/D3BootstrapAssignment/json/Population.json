@@ -1,0 +1,78 @@
+[
+  {
+    "country": "Argentina",
+    "value": "42.2"
+  },
+  {
+    "country": "Australia",
+    "value": "23.3"
+  },
+  {
+    "country": "Brazil",
+    "value": "201.03"
+  },
+  {
+    "country": "Canada",
+    "value": "35.11"
+  },
+  {
+    "country": "China",
+    "value": "1360.72"
+  },
+  {
+    "country": "France",
+    "value": "63.65"
+  },
+  {
+    "country": "Germany",
+    "value": "80.77"
+  },
+  {
+    "country": "India",
+    "value": "1259.35"
+  },
+  {
+    "country": "Indonesia",
+    "value": "248.82"
+  },
+  {
+    "country": "Italy",
+    "value": "59.69"
+  },
+  {
+    "country": "Japan",
+    "value": "127.34"
+  },
+  {
+    "country": "Mexico",
+    "value": "118.4"
+  },
+  {
+    "country": "Russia",
+    "value": "143.7"
+  },
+  {
+    "country": "Saudi Arabia",
+    "value": "29.99"
+  },
+  {
+    "country": "South Africa",
+    "value": "53.16"
+  },
+  {
+    "country": "Republic of Korea",
+    "value": "50.22"
+  },
+  {
+    "country": "Turkey",
+    "value": "76.06"
+  },
+  {
+    "country": "United Kingdom",
+    "value": "64.09"
+  },
+  {
+    "country": "USA",
+    "value": "316.74"
+  }
+]

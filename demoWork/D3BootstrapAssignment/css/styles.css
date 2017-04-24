@@ -1,0 +1,31 @@
+#mainContainer{
+   background-color: brown;
+   text-align: center;
+}
+#navHeader{
+   /*text-align: center;*/
+   float: none;
+}
+#chartRow{
+	margin-top: 100px;
+}
+@media (max-width: 768px) 
+{
+	#chartRow,.message-wrapper,{
+	margin-top: 150px;
+}
+#successMailAlert{
+	margin-bottom: 80px;
+}
+/*#population2013{ transform: rotate(90deg);  }*/
+
+
+
+	
+}
+.button{float: right;}
+
+#messageGDP, #messagePopulation, #messagePPP,.message-wrapper,#successMailAlert{
+	display: none;
+}
+
