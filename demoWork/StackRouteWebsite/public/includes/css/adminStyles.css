@@ -1,0 +1,133 @@
+/*
+
+My Custom CSS for Admin Page
+============================
+
+/* --------------------------------------
+   Layout
+   -------------------------------------- */
+   .inline
+   {
+      display: inline;
+   }
+   #admin-main
+   {
+      background-color: lightgrey;
+   }
+   .red
+   {
+      background: red;
+   }
+   .blue
+   {
+      background: blue;
+   }
+
+   .main-div
+   {
+      min-height: 660px;
+   }
+
+   .pad
+   {
+      padding: 10px;
+   }
+/* --------------------------------------
+   Navbar
+   -------------------------------------- */
+   .admin-nav
+   {
+      height: 90px;
+   }
+   .mymainlogo
+   {
+      height: 60px;
+   }
+   .adminlogo
+   {
+      padding-left: 0px;
+   }
+   .navbar-userdetails
+   {
+      margin-top: 10px;
+   }
+/* --------------------------------------
+   Page
+   -------------------------------------- */
+   #admin-body
+   {
+      background-color: white;
+      margin-top: 100px;
+      padding: 0;
+      padding-top: 10px;
+      margin-bottom: 10px;
+   }
+
+   .admin-operations
+   {
+      margin-top: 40px;
+   }
+
+   .studDetails td,.adminDetails td, .form-details th, .form-details td
+   {
+      width: 20%;
+   }
+
+   .add-stud-button, .ref-stud-button, .add-admin-button, .ref-admin-button, .ref-myform-button, .ref-otherform-button
+   {
+      margin-top: 20px;
+      border: none;
+      background: none;
+      box-shadow: none;
+      color: darkgrey;
+      font-size: 20px;
+   }
+
+   .ref-myform-button, .ref-otherform-button
+   {
+      font-size: 13px;
+      margin-top: 0px;
+   }
+
+/* --------------------------------------
+   Modal - Create Form
+   -------------------------------------- */
+   .create-form-radio
+   {
+      margin-top: 7px; 
+   }
+
+   .form-firstfield
+   {
+      padding: 5px;
+   }
+
+   .field-label
+   {
+      margin: 0px;
+   }
+
+   .allfields
+   {
+      height: 300px;
+      overflow: auto;
+   }
+
+/* --------------------------------------
+   Media Queries
+   -------------------------------------- */
+
+/* Portrait & landscape phone */
+@media (max-width: 480px) {
+  
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+   	
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+   
+}

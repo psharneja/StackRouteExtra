@@ -1,0 +1,199 @@
+{
+  "user": [
+    {
+      "id": 100001,
+      "registered": true,
+      "userType": "admin",
+      "batch": 0,
+      "subCategory": 0,
+      "email": "a@x.in",
+      "name": "Susanne York",
+      "logkey": "p123",
+      "contactNumber": 9123456789
+    },
+    {
+      "id": 100002,
+      "registered": true,
+      "userType": "student",
+      "batch": 111,
+      "subCategory": 1,
+      "email": "abc1@xyz.in",
+      "name": "Hillary Vazquez",
+      "logkey": "password123",
+      "contactNumber": 123421339,
+      "completeProfile": 30
+    },
+    {
+      "id": 100003,
+      "registered": true,
+      "userType": "student",
+      "batch": 111,
+      "subCategory": 1,
+      "email": "abc2@xyz.in",
+      "name": "Kate Terry",
+      "logkey": "password123",
+      "contactNumber": 9123456789
+    },
+    {
+      "id": 100004,
+      "registered": true,
+      "userType": "student",
+      "batch": 111,
+      "subCategory": 1,
+      "email": "abc3@xyz.in",
+      "name": "Addie Brown",
+      "logkey": "password123",
+      "contactNumber": 9123456789
+    },
+    {
+      "id": 100005,
+      "registered": true,
+      "userType": "admin",
+      "batch": 0,
+      "subCategory": 0,
+      "email": "abc4@xyz.in",
+      "name": "Salas Dillon",
+      "logkey": "password123",
+      "contactNumber": 9123456789
+    },
+    {
+      "id": 100006,
+      "registered": true,
+      "userType": "admin",
+      "batch": 0,
+      "subCategory": 0,
+      "email": "asd@qwe.com",
+      "name": "Name khkg",
+      "logkey": "password",
+      "contactNumber": 1234567893
+    }
+  ],
+  "batch": [
+    {
+      "id": 111,
+      "batchName": "Full-Stack Wave 9",
+      "status": "active"
+    },
+    {
+      "id": 222,
+      "batchName": "Full-Stack Wave 10",
+      "status": "active"
+    }
+  ],
+  "subCategory": [
+    {
+      "id": 1,
+      "categoryName": "General"
+    }
+  ],
+  "form": [
+    {
+      "id": 0,
+      "author": 500001,
+      "security": "public",
+      "title": "Form Title",
+      "subTitle": "Form Subtitle",
+      "targetAudience": "all",
+      "targetId": 111111,
+      "fields": [
+        {
+          "id": 0,
+          "label": "Name",
+          "type": "text",
+          "validation": "required"
+        },
+        {
+          "id": 1,
+          "label": "Mobile",
+          "type": "text",
+          "validation": "required"
+        }
+      ]
+    }
+  ],
+  "formResult": [
+    {
+      "id": 0,
+      "formId": 0,
+      "submitterId": 111111,
+      "data": {
+        "Name": "ABC",
+        "Mobile": 9874523431
+      }
+    }
+  ],
+  "attendance": [
+    {
+      "userId": 100003,
+      "date": "09/23/2016",
+      "id": 1
+    },
+    {
+      "userId": 100002,
+      "date": "09/24/2016",
+      "id": 2
+    },
+    {
+      "userId": 100002,
+      "date": "09/25/2016",
+      "id": 3
+    },
+    {
+      "userId": 100002,
+      "date": "09/26/2016",
+      "id": 4
+    },
+    {
+      "userId": 100002,
+      "date": "09/27/2016",
+      "id": 6
+    },
+    {
+      "userId": 100002,
+      "date": "10/12/2016",
+      "id": 7
+    }
+  ],
+  "personalDetail": [
+    {
+      "id": 0,
+      "personId": 100002,
+      "DOB": 324231,
+      "alternateContact": 2134,
+      "gender": "assd",
+      "address": 2323
+    }
+  ],
+  "professionalDetail": [
+    {
+      "id": 0,
+      "personId": 100002,
+      "organisationalName": "dsfsd",
+      "EmployeeId": 213424,
+      "PreviousProject": "wqew",
+      "Experiance": 1,
+      "SuperviserMailId": "dfsf"
+    }
+  ],
+  "educationalDetails": [
+    {
+      "id": 0,
+      "personId": 100002,
+      "highestQualification": 32423,
+      "UniversityName": 4,
+      "DegreeName": 32423,
+      "Duration": 0,
+      "UniversityAddress": 32423
+    }
+  ],
+  "technicalDetails": [
+    {
+      "id": 0,
+      "personId": 100002,
+      "github": 231423,
+      "linkdin": 2134234,
+      "skillSet": 342,
+      "OpenSourceProject": 32432
+    }
+  ]
+}

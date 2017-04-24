@@ -1,0 +1,772 @@
+<div id="student-main">
+  <div class="container">	  
+    <div class="navbar navbar-default navbar-fixed-top admin-nav">
+		<div class="container">	
+			<div class="navbar-header">
+				<a href="#" class="navbar-brand adminlogo" alt="Logo"><img src="images/logofull.png" alt="brand" class="mymainlogo pull-left">
+					<h4 class="inline">&ensp;Student Page</h4>
+				</a>
+			</div>
+
+			<div class="nav navbar-nav navbar-right">
+				<p class="pull-left navbar-userdetails">Logged in as&nbsp;
+					<a href="#MyInfoModal" data-toggle="modal"><span class="glyphicon glyphicon-user"></span>&nbsp;
+						<span class="adminuser">user</span>
+					</a>
+					&nbsp;|&nbsp;
+					<a href="#" class="logout"><span class="glyphicon glyphicon-log-out"></span>&nbsp;Logout</a>
+				</p>
+			</div>
+		</div>
+	</div>  <!-- End of Navbar -->
+
+    
+  </div> End of Main Container
+
+<!-- ***********************Second Header ****************** -->
+	<div id="btnDiv" class="navbar-default-fix-top">
+	  <div class="well btnWell">
+	     <center> <button type="button" class="btn btn-default btn-primary pull-left" id="backBtn">
+	      <span class="glyphicon glyphicon-fast-backward"></span> Back
+	    </button></center>
+	    <center><h3 id="pageId">Page</h3></center>
+	  </div>
+	</div>
+
+<!--****************************Attendance Page **************-->
+<div class="container">
+<div id="AttendenceId" class="content">
+<div class="col-sm-4 col-md-6 feature">
+        <div class="panel panel-default panel-primary pnlAttendence">
+          <div class="panel-heading eventPanel" >
+            <h3 class="panel-title eventTime"><center>Attendence Tracker </center>
+            </h3>
+          </div><!-- end panel-heading -->
+          <div class="panel-body attendencePanelBody">
+             <div class="thumbnail col-sm-8 attendenceThumb">
+              <!-- <img src="..." alt="..."> -->
+                 <div class="caption">
+                   <h3>Todays Date: <span id="date">Date</span></h3>
+                   <!-- <p>...</p> -->
+                   <hr>
+                   <center>
+                     <button type="button" class="btn btn-primary btn-lg attendenceBtn">Present</button>
+                   </center>
+                </div>
+           </div>
+
+           <div class="thumbnail col-sm-8 requestThumb">
+              <!-- <img src="..." alt="..."> -->
+                 <div class="caption">
+                   <h3>Ohh! you are late, see Time:
+                   <span class="time"></span> </h3></br>
+                   <h4> Request Admin for attendence </h4>
+                   <!-- <p>...</p> -->
+                   <hr>
+                   <center>
+                     <button type="button" class="btn btn-warning btn-lg attendenceBtn">Present</button>
+                   </center>
+                </div>
+           </div>
+
+          </div> 
+        </div>
+      </div>
+
+      <div class="col-sm-4 col-md-4 AttendenceStatus">
+        <div class="panel panel-default panel-danger pnlDanger"
+         id="col_fld_6">
+          <div class="panel-heading eventPanel" >
+            <h3 class="panel-title eventTime"><center>Attendence Status </center>
+            </h3>
+          </div><!-- end panel-heading -->
+          <div class="panel-body eventpanelClass">
+          <center>
+              <img src="image/complete.png" class="img-responsive img-circle"   id="imgID"/>
+          <h3 class="attendh3">Mark Your Attendence</h3>
+          </center>
+           </div>
+          </div> 
+        </div>
+      </div>
+      </div>
+</div>
+
+<!-- *************************Attendence Report ************-->
+<div id="ReportId" class="content">
+<div class="container">
+  <div class="col-sm-4 col-md-6 reportStatus">
+        <div class="panel panel-default panel-primary">
+          <div class="panel-heading" >
+          <ul class="pager pagerClass">
+            <li class="previous"><a href="#"><span aria-hidden="true">&larr;</span> Prev Week</a></li>
+            <li class="next"><a href="#">Next Week <span aria-hidden="true">&rarr;</span></a></li>  
+            <h3 class="panel-title "><center>Attendence Report </center>
+            </ul>
+            </h3>
+          </div>
+
+          <div class="panel-body reportPanelClass">
+          
+          <ul class="nav nav-pills pillsClass">
+          </ul>
+           </div>
+          </div> 
+        </div>
+
+          <div class="thumbnail col-sm-2 navbar-default-fix-top
+              presentThumb">
+            <div class="carousel-inner">
+              <center> <img src="image/presentImage.jpg" alt="present"></center>
+               <div class="carousel-caption"><h2 class="presentCount" style="color:black">25</h2></div>
+               </div>
+               <div class="caption">
+                 <center>
+                   <h3 style="color:green">Present<!-- <span id="presentSpan">25</span> --></h3></center>
+               </div>
+           </div>
+
+           <div class="thumbnail col-sm-2 navbar-default-fix-top
+              AbsentThumb">
+             <div class="carousel-inner">
+               <center> <img src="image/absentCount.png" alt="absent"></center>
+              <div class="carousel-caption"><h2 style="color:black" >5</h2>
+              </div> 
+              </div>
+              <div class="caption"><center>
+                <h3 style="color:red">Absent<!-- <span class="absentSpan">2</span> --> </h3></center>
+              </div>
+           </div>
+
+           <div class="thumbnail col-sm-2 navbar-default-fix-top
+              MonthThumb">
+              
+            <center><span id="monthSpan" style="margin-bottom:20px"><h2 class="monthNameh2 ">Month Name</h2></span></center>
+              <div class="caption"><center>
+                <h3 >Month<!-- <span class="absentSpan">2</span> --> </h3></center>
+              </div>
+           </div>
+           </div>
+      </div>
+
+<!--***************************Notification Page **************-->
+<div class="container">
+    <div id="ProfileId" class="content">
+      <!-- <h2>Dynamically Created Form Using jQuery</h2>
+      <div id="form1"> -->
+<!-- Dynamic Form Div -->
+      <!-- </div> -->
+      <div id="ProfileList" class="col-sm-3" style="background-color:#337ab7">
+
+        <div class="well well-sm" style="margin-top: 20px" id="personalDetail" data-toggle="tooltip" data-placement="right" 
+                title="Personal Detail">
+        <a style="display: block" href="#">
+        <center> <img src="image/personal.png" alt="Personal Detail"
+         class="img-responsive img-circle"></center></a>
+        </div>
+
+        <div class="well well-sm" id="professionalDetail" data-toggle="tooltip" data-placement="right" 
+                title="Professional Detail">
+         <a style="display: block" href="#">
+         <center> <img src="image/official.jpg" alt="Professional" class="img-responsive img-circle"></center></a>
+        </div>
+
+        <div class="well well-sm" id="educationalDetail" data-toggle="tooltip" data-placement="right" 
+                title="Educational Detail">
+         <a style="display: block" href="#">
+        <center> <img src="image/educational.png" alt="Educational" class="img-responsive img-circle"></center></a>
+        </div>
+
+        <div class="well well-sm" id="technicalDetail" data-toggle="tooltip" data-placement="right" 
+                title="Technical Detail">
+         <a style="display: block" href="#">
+        <center> <img src="image/technical.png" alt="Technical" class="img-responsive img-circle"></center></a>
+        </div>
+
+        <!-- <div class="well well-sm">
+        <center> <img src="image/extra.png" alt="Extra" class="img-responsive img-circle"></center>
+        </div> -->
+
+      </div>
+
+      <div class="col-sm-7">
+      <ul id="DisplayInfo">Access All your Information </ul>
+      </div>
+
+      <div class="col-sm-2"> 
+      Profile complete<span class="glyphicon glyphicon-road"></span>
+      <div class="profileComplete">
+
+      </div>
+      </div>
+    </div>
+</div>
+
+<!-- ************************Manage Task Page ****************-->
+<div id="ManageTaskId" class="content">
+<p id="text">Manage Task</p>
+</div>
+
+<!--*************************Software Installation ***********-->
+<div id="SoftInstallationId" class="content">
+  <div class="container">
+    <div id="features">
+      <div class="col-sm-4 ">
+        <div class="panel panel-default panel-primary AtomText">
+          <div class="panel-heading">
+            <h3 class="panel-title"><b>Text Editor</b></h3>
+          </div><!-- end panel-heading -->
+          <div class="panel-body">
+            <p>For writing code, we recommend to use the Atom Text Editor</p> <ul><li> Download -
+            <a href="./Setup/Windows/AtomSetup.exe">Atom Windows Setup</a>
+            <hr>
+          </li></ul>
+          <p>If you somehow are unable to install or like to use Atom Text Editor, you can use the Sublime editor</p>
+          <ul><li> Download -
+            <a href="./Setup/Windows/SublimeText3_x64_Setup.exe">Sublime Text Editor</a>
+          </li></ul>
+        </div>
+      </div> <!-- panel body tag -->
+    </div><!-- end panel -->
+
+    <div class="col-sm-4 feature">
+      <div class="panel panel-default panel-primary AtomText">
+        <div class="panel-heading">
+          <h3 class="panel-title"><b>Git Bash</b></h3>
+        </div><!-- end panel-heading -->
+        <div class="panel-body">
+          <p>Git Bash is Unix-like shell but primarily used for managing Git </p><ul><li>
+          Download - <a href="./Setup/Windows/Git-2.9.3.2-64-bit.exe">Git Bsah</a></li></ul>
+        </div> <!-- panel body tag -->
+      </div><!-- end panel -->
+    </div>
+
+    <div class="col-sm-4 feature">
+      <div class="panel panel-default panel-primary AtomText">
+        <div class="panel-heading">
+          <h3 class="panel-title"><b>Speecy Installation</b></h3>
+        </div><!-- end panel-heading -->
+        <div class="panel-body">
+         <p> We will be working on a Linux environment therefore it is a best to work on a Virual Environment, so that we do not have compatibility issues and provide a clean and fast development environment </p>
+         <p>You need to check whether Virtualization is enabled on your processor, to check the same, you can use the Speccy. Speecy provides the detailed system information. If Virtualization is not enabled, you would need to reboot and enable it through your System BIOS.</p>
+         <ul><li>Download -
+           <a href="./Setup/Windows/spsetup129.exe">Speecy</a>
+         </li></ul>
+       </div> <!-- panel body tag -->
+     </div><!-- end panel -->
+   </div>
+ </div><!-- end feature -->
+
+
+
+ <div id="secondRow">
+  <div class="col-sm-4 feature">
+    <div class="panel panel-default panel-primary  AtomText">
+      <div class="panel-heading">
+        <h3 class="panel-title"><b>Oracle Virtual Box 4.3.3</b></h3>
+      </div><!-- end panel-heading -->
+      <div class="panel-body">
+        <p>You would require to install Oracle Virtual Box 4.3.3 (Please do not use the latest version as it has some compatibility issues with Vagrant</p>
+        <ul >
+          <li >Windows 8 -
+            <a href="./Setup/Windows/VirtualBox-4.3.30-101610-Win.exe">VirtualBox-4.3.30</a></li>
+            <li >
+              Windows 10 Users - <a href="./Setup/Windows/VirtualBox-5.1.4-110228-Win.exe">VirtualBox-5.1.4</a>
+            </li>
+          </ul>
+        </div>
+      </div> <!-- panel body tag -->
+    </div><!-- end panel -->
+
+    <div class="col-sm-4 feature">
+      <div class="panel panel-default panel-primary AtomText">
+        <div class="panel-heading">
+          <h3 class="panel-title"><b>Vagrant</b></h3>
+        </div><!-- end panel-heading -->
+        <div class="panel-body">
+          <p>we would require an environment containing isolated dependencies and their configuration within a single disposable machine without sacrificing any of the tools we'er used to working with (editors, browsers, debuggers, etc.) </br>
+            Vagrant provides easy to configure, reproducible, and portable work environments controlled by a single consistent workflow to help maximize the productivity and flexibility</p>
+            <ul><li><p>Windows 8
+              <a href="./Setup/Windows/vagrant_1.7.4.msi">Vagrant 1.7.4</a></p>
+            </li>
+            <li>
+              <p>For Windows 10 - <a href="./Setup/Windows/vagrant_1.8.5.msi">Vagrant 1.8.5</a></p>
+            </li>
+            <li> <p> cmder is Unix-like shell <a href="./Setup/Windows/cmder.zip">cmder.zip</a></p>
+            </li>   
+            </ul>         
+          </div> <!-- panel body tag -->
+        </div><!-- end panel -->
+        </div>
+        </div>
+    </div>
+    </div>
+
+<div id="KnowledgeBaseId" class="content">
+<p id="text">Knowledge Base</p>
+</div>
+
+
+
+  <div class="container" id="MainPage">
+    <div class="row">
+        <div class="card col-md-4 col--6" id="Attendence" 
+          data-toggle="tooltip" data-placement="top" 
+          title="Mark your Attendence">
+            <div class="card-block"><center>
+              <img alt="Attendence" data-no-retina="true" 
+              src="image/attendence.jpg" /></center>
+           </div>
+        </div>
+        <div class="card col-md-4 col--6" id="Report"
+            data-toggle="tooltip" data-placement="top" 
+            title="Attendence Report">
+            <div class="card-block" ><center>
+               <img alt="Attendence Report" data-no-retina="true" src="image/attReport.png"/></center>
+            <!-- <span >Your attendence Report</span> -->
+            </div>
+        </div>
+        <div class="card col-md-4 col--6" id="Profile"
+            data-toggle="tooltip" data-placement="top" 
+            title="My Profile">
+            <div class="card-block"><center>
+               <img src="image/notification.png"  alt="My Profile" data-no-retina ="true"/></center>
+            </div>
+        </div>
+        </div> <!-- row end -->
+        <div class="row secondRow" >
+            <div class="card col-md-4 col--6" id="ManageTask"
+                data-toggle="tooltip" data-placement="bottom" 
+                title="Manage your Task" >
+               <div class="card-block">
+               <center>
+                  <img alt="Manage your task" data-no-retina="true" src="image/workImg.gif" /></center>
+                  <!-- <div class="carousel-caption navbar-fixed-top ">
+                  <h4 style="color:black" ><b>Manage your Task<b></h4>
+              
+                  </div> end carousel-caption--> 
+               </div>
+           </div>
+        <div class="card col-md-4 col--6" id="KnowledgeBase"
+             data-toggle="tooltip" data-placement="bottom" 
+             title="Knowlede Base">
+               <div class="card-block">
+               <center>
+                   <img alt="Knowledge Base" data-no-retina="true"  src="image/kbase.jpg"  /></center>
+               </div>
+        </div>
+        <div class="card col-md-4 col--6" id="SoftInstallation"
+             data-toggle="tooltip" data-placement="bottom" 
+             title="Software Installtion">
+             <div class="card-block">
+             <center>
+                  <img alt="Software Installation" data-no-retina="true" src="image/softInstallation.jpg"  /></center>
+             </div>
+      </div>
+    </div><!-- secondRow End -->
+
+
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="MyInfoModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+       <button class="close" data-dismiss="modal">&times;</button>          
+       <h4 class="modal-title MyInfoModalTitle">Your Information:
+       <!-- <span class="hiddenData" id="batchs">Name</span> -->
+       </h4>
+     </div>
+     <div class="modal-body MyInfoModalBody">                             
+     </div>             
+     <div class="modal-footer">
+      <a role="button" class="btn btn-large btn-primary"  data-dismiss="modal"> Back</a>
+    </div>
+  </div>
+</div>
+</div>
+
+<!--Template -->
+
+<template id="personalTemplate">
+  
+  <div class="panel panel-default panel-primary pnl">
+  <div class="panel-heading pnlHeading">
+    <h3 class="panel-title pnltitle">Personal Detail
+    <span class="glyphicon glyphicon-edit pull-right glyphEdit"></span>
+    </h3>
+  </div>
+    <div class="panel-body pnlBody">
+    <li data-id="{{id}}">
+    <form class="form-horizontal" role="form">
+
+    <div class="form-group">
+    <label for="inputName" class="col-lg-4">Name:</label>
+    <div class="col-lg-8">
+    <span>{{name}}</span>
+    </div>
+    </div>   
+      
+      <!-- <div class="form-group">
+      <label for="waveId" class="col-lg-4">Batch Name:</label>
+      <div class="col-lg-8">
+      <span >{{batchName}}</span>
+      </div>
+      </div> -->
+
+      <div class="form-group">
+      <label for="email" class="col-lg-4">Email Id:</label>
+      <div class="col-lg-8">
+        <span class="email">{{email}}</span>
+        </div>
+      </div> 
+
+      <div class="form-group">
+      <label for="DOB" class="col-lg-4">Date of Birth:</label>
+      <div class="col-lg-8">
+        <span class="DOB noEdit">{{DOB}}</span>
+        <input type="text" data-minlength="6" data-maxlength="10" class=" form-control DOB edit" id="datepicker" required />
+        </div>
+        <!-- / <div class="help-block">Minimum of 10 characters</div> -->
+      </div>
+
+      
+      <div class="form-group">
+      <label for="mobile" class="col-lg-4">Mobile No:</label>
+      <div class="col-lg-8">
+        <span class="contact noEdit">{{contactNumber}}</span>
+        <input type="number" data-minlength="6" data-maxlength="10" class=" form-control contact edit" id="mobile" required />
+        </div>
+        <!-- / <div class="help-block">Minimum of 10 characters</div> -->
+      </div>
+
+      <div class="form-group">
+      <label for="alternate" class="col-lg-4">Alternate Contact No:</label>
+       <div class="col-lg-8">
+        <span class="alternateContact noEdit">{{alternateContact}}</span>
+        <input type="number" data-minlength="6" data-maxlength="10" class="form-control alternateContact edit" required />
+        </div>
+      </div>
+
+      <div class="form-group">
+     <label for="gender" class="col-lg-4"> Gender</label>
+     <div class="col-lg-8">
+      <span class="gender noEdit">{{gender}}</span>
+        <input type="text" data-minlength="6" data-maxlength="10" class="form-control gender edit" required />
+        </div>
+     </div>
+
+       <div class="form-group">
+      <label for="address" class="col-lg-4">Address:</label>
+      <div class="col-lg-8">
+      <span class="address noEdit">{{address}}</span>
+        <textarea class="form-control address edit" rows="3" id="address" required />
+        </div>
+      </div>  
+
+      <div class="form-group" style="margin-top: 10px">
+      <center>
+      <button class="btn btn-primary editSave edit">Save</button>
+      <button type="submit" class="btn btn-warning editCancel edit style">
+      Cancel</button></center>
+      </div>
+      </form>
+    </li>
+    </div>
+  </div>  
+</template>
+
+
+<template id="professionalTemplate">  
+  <div class="panel panel-default panel-primary pnl">
+  <div class="panel-heading">
+    <h3 class="panel-title">Professional Detail
+    <span class="glyphicon glyphicon-edit pull-right glyphEditProfessional"></span>
+    </h3>
+  </div>
+    <div class="panel-body pnlBody">
+    <li data-id={{id}}>
+    <form class="form-horizontal" role="form">
+    <div class="form-group">
+    <label for="organisational" class="col-lg-4">Organisational Name:</label>
+    <div class="col-lg-8">
+    <span class="organisationalName noEdit">{{organisationalName}}</span>
+    <input type="text" class="form-control organisationalName edit" id="organisational" required />
+    </div>
+    </div>   
+      
+      <div class="form-group">
+      <label for="EmployeeId" class="col-lg-4">Employee Id:</label>
+      <div class="col-lg-8">
+      <span class="EmployeeId noEdit">{{EmployeeId}}</span>
+      <input type="text" class="form-control EmployeeId edit" id="EmployeeId" required />
+      </div>
+      </div>
+
+      <div class="form-group">
+      <label for="PreviousProject" class="col-lg-4">Previous Project:</label>
+      <div class="col-lg-8">
+        <span class="PreviousProject email noEdit">{{PreviousProject}}</span>
+        <input type="text" class="form-control PreviousProject edit" id ="PreviousProject" required />
+        </div>
+      </div> 
+
+      
+      <div class="form-group">
+      <label for="Experiance" class="col-lg-4">Experiance:</label>
+      <div class="col-lg-8">
+        <span class="Experiance noEdit">{{Experiance}}</span>
+        <input type="number" class="form-control Experiance edit" id="Experiance" required />
+        </div>
+        <!-- / <div class="help-block">Minimum of 10 characters</div> -->
+      </div>
+
+      <div class="form-group">
+      <label for="Superviser" class="col-lg-4">Superviser MailId:</label>
+       <div class="col-lg-8">
+        <span class="Superviser noEdit">{{SuperviserMailId}}</span>
+        <input type="email" class="form-control Superviser edit" id ="Superviser" required />
+        </div>
+      </div>
+
+      <div class="form-group" style="margin-top: 10px">
+      <center>
+            <button type="submit" class="btn btn-primary saveProfessional edit">Save</button>
+      <button type="submit" class="btn btn-warning cancelProfessional edit">
+      Cancel</button>
+      </center>
+
+      </div>
+      </form>
+    </li>
+    </div>
+  </div>  
+</template>
+
+<template id="educationalTemplate">  
+  <div class="panel panel-default panel-primary pnl">
+  <div class="panel-heading">
+    <h3 class="panel-title">Educational Detail
+     <span class="glyphicon glyphicon-edit pull-right glyphEditEducational"></span>
+    </h3>
+  </div>
+    <div class="panel-body pnlBody">
+    <li data-id={{id}}>
+    <form class="form-horizontal" role="form">
+    <div class="form-group">
+    <label for="highestQualification" class="col-lg-4">Highest Qualification:</label>
+    <div class="col-lg-8">
+    <span class="highestQualification noEdit">{{highestQualification}}</span>
+    <input type="text" class="form-control highestQualification edit" id="highestQualification" required />
+    </div>
+    </div>   
+      
+      <div class="form-group">
+      <label for="UniversityName" class="col-lg-4">University Name</label>
+      <div class="col-lg-8">
+      <span class="UniversityName noEdit">{{UniversityName}}</span>
+      <input type="text" class="form-control UniversityName edit" id="UniversityName" required />
+      </div>
+      </div>
+
+      <div class="form-group">
+      <label for="DegreeName" class="col-lg-4">Degree Name:</label>
+      <div class="col-lg-8">
+        <span class="DegreeName email noEdit">{{DegreeName}}</span>
+        <input type="text" class="form-control DegreeName edit" id ="DegreeName" required />
+        </div>
+      </div> 
+
+      
+      <div class="form-group">
+      <label for="Duration" class="col-lg-4">Duration:</label>
+      <div class="col-lg-8">
+        <span class="Duration noEdit">{{Duration}}</span>
+        <input type="number" class="form-control Duration edit" id="Duration" required />
+        </div>
+        <!-- / <div class="help-block">Minimum of 10 characters</div> -->
+      </div>
+
+      <div class="form-group">
+      <label for="UniversityAddress" class="col-lg-4">University Address:</label>
+       <div class="col-lg-8">
+        <span class="UniversityAddress noEdit">{{UniversityAddress}}</span>
+        <textarea class="form-control UniversityAddress edit" id ="UniversityAddress" required />
+        </div>
+      </div>
+
+      <div class="form-group" style="margin-top: 10px">
+      <center>
+            <button type="submit" class="btn btn-primary saveEducational edit">Save</button>
+      <button type="submit" class="btn btn-warning cancelEducational edit">
+      Cancel</button>
+      </center>
+
+      </div>
+      </form>
+    </li>
+    </div>
+  </div>  
+</template>
+
+<template id="technicalTemplate">  
+  <div class="panel panel-default panel-primary pnl">
+  <div class="panel-heading">
+    <h3 class="panel-title">Technical Detail
+    <span class="glyphicon glyphicon-edit pull-right glyphTechnicalDetail"></span>
+    </h3>
+  </div>
+    <div class="panel-body pnlBody">
+    <li data-id={{id}}>
+    <form class="form-horizontal" role="form">
+    <div class="form-group">
+    <label for="github" class="col-lg-4">GitHub Link:</label>
+    <div class="col-lg-8">
+    <span class="github noEdit">{{github}}</span>
+    <input type="text" class="form-control github edit" id="github" />
+    </div>
+    </div>   
+      
+      <div class="form-group">
+      <label for="linkdin" class="col-lg-4">Linkdin Link</label>
+      <div class="col-lg-8">
+      <span class="linkdin noEdit">{{linkdin}}</span>
+      <input type="text" class="form-control linkdin edit" id="linkdin" />
+      </div>
+      </div>
+
+      <div class="form-group">
+      <label for="skillSet" class="col-lg-4">Skill Set:</label>
+      <div class="col-lg-8">
+        <span class="skillSet email noEdit">{{skillSet}}</span>
+        <input type="text" class="form-control skillSet edit" id ="skillSet" required />
+        </div>
+      </div> 
+
+      
+      <div class="form-group">
+      <label for="OpenSourceProject" class="col-lg-4">Open Source Project Link:</label>
+      <div class="col-lg-8">
+        <span class="OpenSourceProject noEdit">{{OpenSourceProject}}</span>
+        <input type="text" class="form-control OpenSourceProject edit" id="OpenSourceProject" />
+        </div>
+        <!-- / <div class="help-block">Minimum of 10 characters</div> -->
+      </div>
+
+      <div class="form-group" style="margin-top: 10px">
+      <center>
+            <button type="submit" class="btn btn-primary saveTechnical edit">Save</button>
+      <button type="submit" class="btn btn-warning cancelTechnical edit">
+      Cancel</button>
+      </center>
+
+      </div>
+      </form>
+    </li>
+    </div>
+  </div>  
+</template>
+
+<template id="attendenceReportTemplate">
+  
+              <li role="presentation" class="active col-md-8" style="margin: 10px 20px" ><a href="#">{{date}}
+              <span class="badge pull-right" style="background-color: green;color: white">P</span></a></li>
+          
+</template>
+
+<template id="profileTemplate">
+  <div class="progress">
+      <div class="progress-bar" role="progressbar" >
+        {{completeProfile}}    
+        </div>
+</div>
+</template>
+
+<template id="infoTemplate">
+       <div class="col-sm-4 col-md-12 feature">
+        <div class="panel panel-default panel-primary">
+          <div class="panel-heading eventPanel" >
+            <h3 class="panel-title eventTime"><center>{{name}} </center>
+            </h3>
+          </div><!-- end panel-heading -->
+          <div class="panel-body eventpanelClass">
+            <div> 
+              <ul style="text-decoration:none">    
+                <li><b> Email Address : </b>{{email}} </li>
+                <li> <b>Contact Number :</b>{{contactNumber}} </li>
+              </ul>
+            </div>  
+          </div> 
+        </div>
+      </div>
+    </template>
+
+    <template id="batchTemplate">
+    <div class="col-sm-4 col-md-12 feature">
+        <div class="panel panel-default panel-primary">
+          <div class="panel-heading eventPanel" >
+            <h3 class="panel-title eventTime"><center>Batch Name </center>
+            </h3>
+          </div><!-- end panel-heading -->
+          <div class="panel-body eventpanelClass">
+            <div> 
+              <ul style="text-decoration:none">    
+                <li > <b>Batch :</b>{{batchName}} </li>
+              </ul>
+            </div>  
+          </div> 
+        </div>
+      </div>
+    </template>
+
+    <template id="catagoryTemplate">
+    <div class="col-sm-4 col-md-12 feature">
+        <div class="panel panel-default panel-primary">
+          <div class="panel-heading eventPanel" >
+            <h3 class="panel-title eventTime"><center>Project Name </center>
+            </h3>
+          </div><!-- end panel-heading -->
+          <div class="panel-body eventpanelClass">
+            <div> 
+              <ul style="text-decoration:none">    
+                 <li >{{categoryName}} </li>
+              </ul>
+            </div>  
+          </div> 
+        </div>
+      </div>
+    </template>
+
+    <template id="mentorTemplate">
+    <div class="col-sm-4 col-md-12 feature">
+        <div class="panel panel-default panel-primary">
+          <div class="panel-heading eventPanel" >
+            <h3 class="panel-title eventTime"><center>Mentor Name </center>
+            </h3>
+          </div><!-- end panel-heading -->
+          <div class="panel-body eventpanelClass">
+            <div> 
+              <ul style="text-decoration:none">    
+                <li > {{name}} </li>
+              </ul>
+            </div>  
+          </div> 
+        </div>
+      </div>
+    </template>
+
+
+</div>
+<footer>
+  <div class="navbar navbar-default navbar-fixed-bottom">
+    <div class="container">
+      <div class="navbar-header pull-right">
+        <p>Developed with <span class="glyphicon glyphicon-heart"></span> by Stackroute Wave-9 Batch</p>
+      </div>
+    </div> <!-- End of Container -->
+  </div> <!-- End of Navbar -->
+</footer>
+
+  <script src="includes/jquery/myquerystudent.js"></script>

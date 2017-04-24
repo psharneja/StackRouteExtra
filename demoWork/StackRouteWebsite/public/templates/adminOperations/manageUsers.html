@@ -1,0 +1,107 @@
+<div class="center full-width">
+	<h4>Manage Users</h4>
+</div>
+<div class="row full-width">
+	<ul class="nav nav-tabs">
+	  <li class="active"><a href="#studlisttab" data-toggle="tab">Students</a></li>
+	  <li><a href="#adminlisttab" data-toggle="tab">Admins</a></li>
+	</ul>
+	<div class="tab-content">
+		<div class="tab-pane active" id="studlisttab">
+			<div class="full-width">
+				<button class="btn btn-default pull-left add-stud-button"><span class="glyphicon glyphicon-plus"></button>
+				<button class="btn btn-default pull-right ref-stud-button"><span class="glyphicon glyphicon-refresh"></button>
+			</div>
+			<div class="stud-list">
+				
+			</div>
+		</div>
+		<div class="tab-pane" id="adminlisttab">
+			<div class="full-width">
+				<button class="btn btn-default pull-left add-admin-button"><span class="glyphicon glyphicon-plus"></button>
+				<button class="btn btn-default pull-right ref-admin-button"><span class="glyphicon glyphicon-refresh"></button>
+			</div>
+			<div>
+				<table class="table">
+					<thead>
+						<tr>
+							<th colspan="3">Administrators List</th>
+						</tr>
+					</thead>
+					<tbody class="admin-list">
+						
+					</tbody>
+				</table>	
+			</div>
+		</div>
+	</div>
+</div>
+
+<template id="student-table-template">
+	<table class="table">
+		<thead>
+			<tr>
+				<th colspan="3">{{batchHead}}</th>
+			</tr>
+		</thead>
+		<tbody id="{{studentBodyId}}">
+			
+		</tbody>
+	</table>
+</template>
+
+<template id="student-row-template">
+	<tr class="studDetails">
+		<td>{{name}}</td>
+		<td>{{email}}</td>
+		<td>
+			<button class="btn btn-default btn-xs more-details"><span class="glyphicon glyphicon-user"></span>&nbsp;<span class="glyphicon glyphicon-chevron-down"></span></button>
+		</td>
+	</tr>
+	<tr class="stud-more-details">
+		<td colspan="3">
+			<div class="well well-sm">
+				<p><strong>Student Id : </strong>{{id}}</p>
+				<p><strong>Name : </strong>{{name}}</p>
+				<p><strong>E-Mail : </strong>{{email}}</p>
+				<p><strong>Contact Number : </strong>{{contactNumber}}</p>
+			</div>
+		</td>
+	</tr>
+</template>
+
+<template id="admin-row-template">
+	<tr class="adminDetails">
+		<td>{{name}}</td>
+		<td>{{email}}</td>
+		<td>{{contactNumber}}</td>
+	</tr>
+</template>
+
+<template id="student-table-error-template">
+	<table class="table">
+		<thead>
+			<tr>
+				<th colspan="3" class="center">No records found&nbsp;<span class="glyphicon glyphicon-alert"></span></th>
+			</tr>
+		</thead>
+	</table>
+</template>
+
+<template id="student-row-error-template">
+	<tr>
+		<td colspan="3" class="center">
+			No records found&nbsp;<span class="glyphicon glyphicon-alert"></span>
+		</td>
+	</tr>
+</template>
+
+<template id="admin-row-error-template">
+	<tr class="adminDetails">
+		<td colspan="3" class="center">
+			No records found&nbsp;<span class="glyphicon glyphicon-alert"></span>
+		</td>
+	</tr>
+</template>
+
+<script src="includes/jquery/admin/myqueryadmin-manageusers.js"></script>

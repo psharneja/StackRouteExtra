@@ -1,0 +1,144 @@
+<div class="center full-width">
+	<h4>Manage Forms</h4>
+</div>
+<div class="row center full-width">
+	<div>
+		<div class="full-width">
+			<button class="btn btn-default add-form-button" href="#createFormModal" data-toggle="modal">
+				<span class="glyphicon glyphicon-plus"></span> Add a new Form
+			</button>
+		</div>
+		<div class="form-list">
+			<table class="table">
+				<thead>
+					<tr class="form-details">
+						<th colspan="3">
+							Your Forms
+							<button class="btn btn-default ref-myform-button">
+								<span class="glyphicon glyphicon-refresh">
+							</button>
+						</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr class="form-details" id="your-form-row">
+
+					</tr>
+				</tbody>
+			</table>
+			<table class="table">
+				<thead>
+					<tr class="form-details">
+						<th colspan="3">
+							Other Forms
+							<button class="btn btn-default ref-otherform-button">
+								<span class="glyphicon glyphicon-refresh">
+							</button>
+						</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr class="form-details" id="other-form-row">
+
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>
+
+<template id="form-row-template">
+	<td>{{title}}</td>
+	<td>Send to : {{target}}</td>
+	<td>{{security}}</td>
+</template>
+
+<template id="form-row-error-template">
+	<td colspan="4" class="center">
+			No records found&nbsp;<span class="glyphicon glyphicon-alert"></span>
+	</td>
+</template>
+
+<template id="create-form-field-template">
+	<div class="panel panel-default">
+		<div class="panel-body">
+			<div class="form-firstfield">
+ 				<label for="subtitle" class="pull-left field-label">Field 1</label><br/>
+ 				<input type="text" name="firsttitle" class="form-control half-width pull-left" placeholder="Field Title" required>
+ 				<div class="create-form-radio">
+	 				<label class="radio-inline inline">
+				     	<input type="radio" name="fieldtype" value="text" checked>Text Box
+				    </label>
+	 				<label class="radio-inline">
+						<input type="radio" name="fieldtype" value="textarea">Text Area
+					</label>
+					<button type="button" class="btn btn-danger btn-medium pull-right"><span class="glyphicon glyphicon-trash"></span></button>
+				</div>
+			</div> <!-- End of Text Box -->
+		</div>
+	</div>
+</template>
+
+<div class="modal fade" id="createFormModal">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h3 class="modal-title">Create New Form</h3>
+			</div> <!-- End of Modal 2 Header -->
+			<div class="modal-body center overflow">
+				<form class="create-form pad">
+					<!-- Title -->
+		 			<div class="row form-title">
+		 				<label for="title" class="pull-left">Title</label>				 				 
+						<input type="text" name="title" class="form-control full-width" required>
+					</div> <!-- End of Text Box -->
+					<br>
+
+					<!-- SubTitle -->
+		 			<div class="row form-subtitle">
+		 				<label for="subtitle" class="pull-left">Sub-Title</label>				 				 
+						<input type="text" name="subtitle" class="form-control full-width" placeholder="(Optional)">
+					</div> <!-- End of Text Box -->
+					<br>
+
+					<div class="row form-fields">
+		 				<label for="fields" class="pull-left">Fields</label>				 				 
+					</div> <!-- End of Text Box -->
+
+					<div class="allfields">
+						<!-- First Field -->
+						<div class="panel panel-default">
+							<div class="panel-body">
+								<div class="form-firstfield">
+					 				<label for="subtitle" class="pull-left field-label">Field 1</label><br/>
+					 				<input type="text" name="firsttitle" class="form-control half-width pull-left" placeholder="Field Title" required>
+					 				<div class="create-form-radio">
+						 				<label class="radio-inline inline">
+									     	<input type="radio" name="fieldtype" value="text" checked>Text Box
+									    </label>
+						 				<label class="radio-inline">
+											<input type="radio" name="fieldtype" value="textarea">Text Area
+										</label>
+									</div>
+								</div> <!-- End of Text Box -->
+							</div>
+						</div>
+
+						<div id="form-fields">
+
+						</div>
+					</div>
+					<button type="button" id="add-new-field-button" class="btn btn-primary btn-medium pull-left">
+						<span class="glyphicon glyphicon-plus"></span> Add New Field
+					</button>
+				</form>
+			</div> <!-- End of Modal 3 Body -->
+			<div class="modal-footer">
+				<button class="btn btn-success" data-dismiss="modal" type="button">Create</button>
+				<button class="btn btn-default" data-dismiss="modal" type="button">Cancel</button>
+			</div> <!-- End of Modal 3 footer -->
+		</div> <!-- End of Modal 3 Content -->
+	</div> <!-- End of Modal 3 Dialog -->
+</div> <!-- End of Modal 3 -->
+
+<script src="includes/jquery/admin/myqueryadmin-manageforms.js"></script>

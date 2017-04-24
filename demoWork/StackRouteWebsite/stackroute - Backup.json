@@ -1,0 +1,129 @@
+{
+  "user": [
+    {
+      "id": 100001,
+      "registered": true,
+      "userType": "admin",
+      "batch": 0,
+      "subCategory": 0,
+      "email": "a@x.in",
+      "name": "Susanne York",
+      "logkey": "p123",
+      "contactNumber": 9123456789
+    },
+    {
+      "id": 100002,
+      "registered": true,
+      "userType": "student",
+      "batch": 111,
+      "subCategory": 1,
+      "email": "abc1@xyz.in",
+      "name": "Hillary Vazquez",
+      "logkey": "password123",
+      "contactNumber": 9123456789
+    },
+    {
+      "id": 100003,
+      "registered": true,
+      "userType": "student",
+      "batch": 222,
+      "subCategory": 1,
+      "email": "abc2@xyz.in",
+      "name": "Kate Terry",
+      "logkey": "password123",
+      "contactNumber": 9123456789
+    },
+    {
+      "id": 100004,
+      "registered": true,
+      "userType": "student",
+      "batch": 111,
+      "subCategory": 1,
+      "email": "abc3@xyz.in",
+      "name": "Addie Brown",
+      "logkey": "password123",
+      "contactNumber": 9123456789
+    },
+    {
+      "id": 100005,
+      "registered": true,
+      "userType": "admin",
+      "batch": 0,
+      "subCategory": 0,
+      "email": "abc4@xyz.in",
+      "name": "Salas Dillon",
+      "logkey": "password123",
+      "contactNumber": 9123456789
+    },
+    {
+      "id": 100006,
+      "registered": true,
+      "userType": "admin",
+      "batch": 0,
+      "subCategory": 0,
+      "email": "asd@qwe.com",
+      "name": "abc",
+      "logkey": "pass1234",
+      "contactNumber": 9768564857
+    }
+  ],
+  "batch": [
+    {
+      "id": 111,
+      "batchName": "Full-Stack Wave 9",
+      "status": "active"
+    },
+    {
+      "id": 222,
+      "batchName": "Full-Stack Wave 10",
+      "status": "active"
+    }
+  ],
+  "subCategory": [
+    {
+      "id": 1,
+      "categoryName": "General"
+    }
+  ],
+  "form": [
+    {
+      "id": 0,
+      "author": 500001,
+      "security": "public",
+      "title": "Form Title",
+      "subTitle": "Form Subtitle",
+      "targetAudience": "all",
+      "targetId": 111111,
+      "fields": [
+        {
+          "id": 0,
+          "label": "Name",
+          "type": "text",
+          "validation": "required"
+        },
+        {
+          "id": 1,
+          "label": "Mobile",
+          "type": "text",
+          "validation": "required"
+        }
+      ]
+    }
+  ],
+  "formResult": [
+    {
+      "id": 0,
+      "formId": 0,
+      "submitterId": 111111,
+      "data": {
+        "Name": "ABC",
+        "Mobile": 9874523431
+      }
+    }
+  ],
+  "attendance": [
+    {
+      "id": 0
+    }
+  ]
+}
